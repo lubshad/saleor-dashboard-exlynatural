@@ -1,8 +1,6 @@
-import sideBarDefaultLogoDarkMode from "@assets/images/sidebar-deafult-logo-darkMode.png";
-import sideBarDefaultLogo from "@assets/images/sidebar-default-logo.png";
+import exlynaturalMark from "@assets/images/exlynatural-mark.png";
 import { useCloud } from "@dashboard/auth/hooks/useCloud";
-import { useLegacyThemeHandler } from "@dashboard/components/Sidebar/user/Controls";
-import { Avatar, Box, Text, Tooltip } from "@saleor/macaw-ui-next";
+import { Box, Text, Tooltip } from "@saleor/macaw-ui-next";
 import { CloudIcon } from "lucide-react";
 import { useState } from "react";
 import { FormattedMessage } from "react-intl";
@@ -10,8 +8,6 @@ import { FormattedMessage } from "react-intl";
 import { useEnvLink } from "./menu/hooks/useEnvLink";
 
 export const MountingPoint = () => {
-  const { theme } = useLegacyThemeHandler();
-  const logo = theme === "defaultLight" ? sideBarDefaultLogo : sideBarDefaultLogoDarkMode;
   const { isAuthenticatedViaCloud } = useCloud();
   const envLink = useEnvLink();
   const [isHovered, setIsHovered] = useState(false);
@@ -26,9 +22,17 @@ export const MountingPoint = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Avatar.Store src={logo} scheme="accent1" size="small" />
+      <Box
+        as="img"
+        src={exlynaturalMark}
+        alt=""
+        aria-hidden
+        __width={32}
+        __height={32}
+        style={{ objectFit: "contain" }}
+      />
       <Text size={3} fontWeight="bold" __flex="1">
-        Saleor Dashboard
+        Exlynatural
       </Text>
       {isAuthenticatedViaCloud && (
         <>
@@ -55,7 +59,7 @@ export const MountingPoint = () => {
             <Tooltip.Content side="bottom">
               <Tooltip.Arrow />
               <Text size={2}>
-                <FormattedMessage defaultMessage="Go to Saleor Cloud" id="EXqb2l" />
+                <FormattedMessage defaultMessage="Go to Exlynatural Cloud" id="P0omLC" />
               </Text>
             </Tooltip.Content>
           </Tooltip>

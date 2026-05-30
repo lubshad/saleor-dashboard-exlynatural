@@ -158,9 +158,9 @@ export const CustomExtensionDetailsPage = (props: CustomExtensionDetailsPageProp
                 description: "checkbox label",
               })}
               description={intl.formatMessage({
-                id: "GuYTfQ",
+                id: "uRJ8Ym",
                 defaultMessage:
-                  "Expand or restrict extension permissions to access certain part of Saleor system.",
+                  "Expand or restrict extension permissions to access certain parts of Exlynatural.",
                 description: "card description",
               })}
             />

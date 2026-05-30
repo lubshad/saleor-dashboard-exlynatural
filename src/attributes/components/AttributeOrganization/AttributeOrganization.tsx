@@ -62,9 +62,9 @@ const AttributeOrganization = (props: AttributeOrganizationProps) => {
         {canChangeType ? (
           <RadioGroup
             label={intl.formatMessage({
-              id: "T0lfLH",
-              defaultMessage: "Define where this attribute should be used in Saleor system",
-              description: "Define where this attribute should be used in Saleor system",
+              id: "oUssok",
+              defaultMessage: "Define where this attribute should be used in Exlynatural",
+              description: "Define where this attribute should be used in Exlynatural",
             })}
             size="medium"
             value={data.type as AttributeTypeEnum}

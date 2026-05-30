@@ -27,8 +27,9 @@ const errorMessages = defineMessages({
     description: "error message",
   },
   serverError: {
-    id: "ChGI4V",
-    defaultMessage: "Saleor is unavailable, please check your network connection and try again.",
+    id: "Cm0NZZ",
+    defaultMessage:
+      "Exlynatural is unavailable, please check your network connection and try again.",
     description: "error message",
   },
   noPermissionsError: {

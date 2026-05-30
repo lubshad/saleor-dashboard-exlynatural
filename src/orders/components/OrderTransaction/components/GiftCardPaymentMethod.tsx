@@ -12,7 +12,7 @@ const BRAND_LOGO_SIZE = 26;
 const getPaymentMethodIconUrl = (fileName: string) =>
   `${getStaticUrl()}payment-methods/${fileName}.svg`;
 
-const SaleorGiftCardIcon = () => (
+const ExlynaturalGiftCardIcon = () => (
   <Box
     width={6}
     height={4}
@@ -24,7 +24,7 @@ const SaleorGiftCardIcon = () => (
     alignItems="center"
     justifyContent="center"
   >
-    <img src={icon} alt="Saleor Gift Card" title="Saleor Gift Card" />
+    <img src={icon} alt="Exlynatural Gift Card" title="Exlynatural Gift Card" />
   </Box>
 );
 
@@ -61,9 +61,9 @@ export const GiftCardPaymentMethod = ({ details }: GiftCardPaymentMethodProps) =
   if (details.isSaleorGiftcard) {
     return (
       <Box display="flex" alignItems="center" gap={2}>
-        <SaleorGiftCardIcon />
+        <ExlynaturalGiftCardIcon />
         <Text size={2} color="default2">
-          Saleor Gift Card
+          Exlynatural Gift Card
         </Text>
         {formattedCode && (
           <Text size={2} color="default2">

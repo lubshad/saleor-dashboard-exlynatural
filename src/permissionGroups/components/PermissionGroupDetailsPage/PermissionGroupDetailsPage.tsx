@@ -169,9 +169,9 @@ export const PermissionGroupDetailsPage = ({
                 errorMessage={permissionsError}
                 fullAccessLabel={intl.formatMessage(buttonMessages.selectAll)}
                 description={intl.formatMessage({
-                  id: "CYZse9",
+                  id: "J6imQY",
                   defaultMessage:
-                    "Expand or restrict group's permissions to access certain part of saleor system.",
+                    "Expand or restrict group's permissions to access certain parts of Exlynatural.",
                   description: "card description",
                 })}
               />

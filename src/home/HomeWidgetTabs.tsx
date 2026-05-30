@@ -1,6 +1,6 @@
 import { Tab, TabContainer } from "@dashboard/components/Tab";
 import { type Extension } from "@dashboard/extensions/types";
-import { SaleorLogo } from "@dashboard/extensions/views/InstallCustomExtension/components/InstallSectionData/InstallExtensionManifestData/SaleorLogo";
+import { ExlynaturalLogo } from "@dashboard/extensions/views/InstallCustomExtension/components/InstallSectionData/InstallExtensionManifestData/ExlynaturalLogo";
 import useNavigator from "@dashboard/hooks/useNavigator";
 import { Box, Text } from "@saleor/macaw-ui-next";
 import { Blocks } from "lucide-react";
@@ -54,7 +54,7 @@ export const HomeWidgetTabs = ({
                 extension.isSaleorOfficial ? `saleor-app-badge-${extension.id}` : undefined
               }
             >
-              {extension.isSaleorOfficial && <SaleorLogo />}
+              {extension.isSaleorOfficial && <ExlynaturalLogo />}
             </Box>
             <Box display="inline-flex" flexDirection="column">
               <span>{extension.label}</span>

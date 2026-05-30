@@ -52,8 +52,8 @@ export const getTilesData = ({
     content: (
       <Paragraph>
         <FormattedMessage
-          defaultMessage="Save hours of evaluating Saleor on your own by speaking with our solution engineer."
-          id="RABrGb"
+          defaultMessage="Save hours of evaluating Exlynatural on your own by speaking with our solution engineer."
+          id="rzWn+x"
         />
       </Paragraph>
     ),
@@ -113,14 +113,14 @@ export const getTilesData = ({
     header: (
       <>
         <ExtensionIcon />
-        <FormattedMessage defaultMessage="Explore Saleor App Store" id="/H9LeU" />
+        <FormattedMessage defaultMessage="Explore Exlynatural App Store" id="TPkruH" />
       </>
     ),
     content: (
       <Paragraph>
         <FormattedMessage
-          defaultMessage="Add new functionalities on top of Saleor and integrate it with third-party services. They can be installed, managed, and rendered in here in Saleor Dashboard."
-          id="XVQpjm"
+          defaultMessage="Add new functionalities on top of Exlynatural and integrate it with third-party services. They can be installed, managed, and rendered here in Exlynatural."
+          id="AJ2IGn"
         />
       </Paragraph>
     ),
@@ -147,7 +147,7 @@ export const getTilesData = ({
     header: (
       <>
         <BagIcon />
-        <FormattedMessage defaultMessage="Learn Saleor checkout process flow" id="Cc3Z40" />
+        <FormattedMessage defaultMessage="Learn Exlynatural checkout process flow" id="OvSgcG" />
       </>
     ),
     content: (
@@ -187,8 +187,8 @@ export const getTilesData = ({
     content: (
       <Paragraph>
         <FormattedMessage
-          defaultMessage="Join our OS community of industry experts and learn more about open source at Saleor."
-          id="Tp5T7U"
+          defaultMessage="Join our OS community of industry experts and learn more about open source at Exlynatural."
+          id="ME2pXR"
         />
       </Paragraph>
     ),

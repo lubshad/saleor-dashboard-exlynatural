@@ -14,12 +14,12 @@ export const contextualLinks = defineMessages({
     id: "BA4leV",
   },
   webhooks: {
-    defaultMessage: "Learn more about {extendingSaleor}",
-    id: "zT1CvH",
+    defaultMessage: "Learn more about {extendingPlatform}",
+    id: "ayqVGN",
   },
-  extendingSaleor: {
-    defaultMessage: "extending Saleor with Webhooks",
-    id: "B8PvdI",
+  extendingPlatform: {
+    defaultMessage: "extending Exlynatural with Webhooks",
+    id: "vA3Lig",
   },
   staffMembers: {
     defaultMessage: "Learn more about {userPermissions}",

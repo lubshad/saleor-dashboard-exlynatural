@@ -112,8 +112,8 @@ export const infoMessages = defineMessages({
   },
   permissionsDescription: {
     defaultMessage:
-      "Expand or restrict extension permissions to access certain part of Saleor system.",
-    id: "kr1PlW",
+      "Expand or restrict extension permissions to access certain parts of Exlynatural.",
+    id: "bKML6N",
   },
   grantFullAccess: {
     defaultMessage: "Grant this extension full access to the store",
@@ -200,8 +200,8 @@ export const messages = defineMessages({
     id: "80g19N",
   },
   pluginDescription: {
-    defaultMessage: "Plugin built-in to Saleor's core codebase",
-    id: "EEWsPs",
+    defaultMessage: "Plugin built into Exlynatural",
+    id: "3LYG6i",
   },
   pluginInfoImportant: {
     defaultMessage: "Important",
@@ -218,8 +218,8 @@ export const messages = defineMessages({
   },
   selfHostedBanner: {
     defaultMessage:
-      "Apps are available for Saleor Cloud users. Most of them are available for self-hosting.",
-    id: "6IteaF",
+      "Apps are available for Exlynatural Cloud users. Most of them are available for self-hosting.",
+    id: "9+uCxd",
   },
   noExtensionsInstalled: {
     defaultMessage: "No extensions installed yet",
@@ -238,9 +238,9 @@ export const messages = defineMessages({
     id: "4YJHut",
   },
   installationCloudOnly: {
-    defaultMessage: "Use Saleor Cloud to access Saleor Extensions",
+    defaultMessage: "Use Exlynatural Cloud to access Exlynatural Extensions",
     description: "description",
-    id: "jm2YzF",
+    id: "rtqFbB",
   },
   missingExtensionsButton: {
     id: "VS0YOp",
@@ -510,8 +510,8 @@ export const appManifestErrorMessages = defineMessages({
     // AppErrorCode.MANIFEST_URL_CANT_CONNECT
     defaultMessage:
       // TODO: Add docs link when we have docs page with explanation
-      "Saleor could not connect to the provided manifest URL. ({errorCode})",
-    id: "DbNXK5",
+      "Exlynatural could not connect to the provided manifest URL. ({errorCode})",
+    id: "izpG7b",
   },
   notFound: {
     // AppErrorCode.NOT_FOUND
@@ -567,9 +567,9 @@ export const appManifestErrorMessages = defineMessages({
   },
   unsupportedSaleorVersion: {
     // AppErrorCode.UNSUPPORTED_SALEOR_VERSION
-    id: "fWaj1M",
+    id: "bor88k",
     defaultMessage:
-      "The Saleor version your extension is trying to use is newer than your current Saleor version. {docsLink} ({errorCode})",
+      "The Exlynatural version your extension is trying to use is newer than your current Exlynatural version. {docsLink} ({errorCode})",
   },
 });
 
@@ -580,8 +580,8 @@ export const localAppErrorMessages = defineMessages({
     defaultMessage: "An unexpected error occurred while saving the extension.",
   },
   invalidPermission: {
-    id: "tI7/Ib",
-    defaultMessage: "Extension requested permissions that are not available in Saleor.",
+    id: "gyo6Gs",
+    defaultMessage: "Extension requested permissions that are not available in Exlynatural.",
   },
   outOfScopeApp: {
     id: "PFmBz7",

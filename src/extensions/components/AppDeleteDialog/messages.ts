@@ -7,9 +7,9 @@ export default defineMessages({
     description: "dialog header",
   },
   deleteApp: {
-    id: "IW4YT7",
+    id: "JPGYSO",
     defaultMessage:
-      "By deleting this extension, you will remove installation of the extension. If you are paying for extension's subscription, remember to unsubscribe from the extension in Saleor Marketplace.",
+      "By deleting this extension, you will remove installation of the extension. If you are paying for extension's subscription, remember to unsubscribe from the extension in Exlynatural Marketplace.",
     description: "delete app",
   },
   deleteLocalApp: {
@@ -19,9 +19,9 @@ export default defineMessages({
     description: "delete custom app",
   },
   deleteNamedApp: {
-    id: "nIwoHa",
+    id: "NjpaMX",
     defaultMessage:
-      "By deleting {name}, you will remove installation of the extension. If you are paying for extension's subscription, remember to unsubscribe from the extension in Saleor Marketplace.",
+      "By deleting {name}, you will remove installation of the extension. If you are paying for extension's subscription, remember to unsubscribe from the extension in Exlynatural Marketplace.",
     description: "delete app",
   },
   deleteLocalNamedApp: {

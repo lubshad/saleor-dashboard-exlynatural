@@ -2,6 +2,10 @@ import { type Theme } from "@material-ui/core/styles";
 import { dark, light, type Themes } from "@saleor/macaw-ui";
 import { themes, vars } from "@saleor/macaw-ui-next";
 
+const exlynaturalGreen = "#287E45";
+const exlynaturalLeaf = "#83C94F";
+const exlynaturalDarkGreen = "#174F30";
+
 const breakpoints = {
   keys: ["xs", "sm", "md", "lg", "xl"],
   values: { lg: 1680, md: 1280, sm: 600, xl: 1920, xs: 0 },
@@ -121,6 +125,19 @@ export const themeOverrides: Partial<Theme> = {
 export const paletteOverrides: Themes = {
   light: {
     ...light,
+    active: {
+      1: exlynaturalGreen,
+      2: "#348F52",
+      3: "#55A96B",
+      4: "#BFE4C2",
+      5: "#E9F6E7",
+    },
+    success: {
+      ...light.success,
+      dark: exlynaturalGreen,
+      mid: exlynaturalLeaf,
+      light: "#E9F6E7",
+    },
     background: {
       ...light.background,
       default: themes.defaultLight.colors.background.default1,
@@ -128,9 +145,22 @@ export const paletteOverrides: Themes = {
   },
   dark: {
     ...dark,
+    active: {
+      1: exlynaturalLeaf,
+      2: "#76B948",
+      3: exlynaturalGreen,
+      4: "#24683B",
+      5: exlynaturalDarkGreen,
+    },
+    success: {
+      ...dark.success,
+      dark: exlynaturalGreen,
+      mid: exlynaturalLeaf,
+      light: "#DDF3D8",
+    },
     background: {
       ...dark.background,
-      default: themes.defaultDark.colors.background.default1,
+      default: exlynaturalDarkGreen,
     },
   },
 };

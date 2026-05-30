@@ -2,7 +2,7 @@ import { useTheme } from "@dashboard/theme";
 import { type DefaultTheme } from "@saleor/macaw-ui-next";
 import { render, screen } from "@testing-library/react";
 
-import { SaleorLogo } from "./SaleorLogo";
+import { ExlynaturalLogo } from "./ExlynaturalLogo";
 
 jest.mock("@dashboard/theme", () => {
   const actualTheme = jest.requireActual("@dashboard/theme");
@@ -13,7 +13,7 @@ jest.mock("@dashboard/theme", () => {
   };
 });
 
-describe("SaleorLogo", () => {
+describe("ExlynaturalLogo", () => {
   it("should display light mode logo when theme is defaultLight", () => {
     // Arrange
     const mockTheme: DefaultTheme = "defaultLight";
@@ -23,12 +23,12 @@ describe("SaleorLogo", () => {
     });
 
     // Act
-    render(<SaleorLogo />);
+    render(<ExlynaturalLogo />);
 
     // Assert
     const img = screen.getByRole("img");
 
-    expect(img).toHaveAttribute("src", expect.stringContaining("sidebar-default-logo.png"));
+    expect(img).toHaveAttribute("src", expect.stringContaining("exlynatural-logo.svg"));
   });
 
   it("should display dark mode logo when theme is defaultDark", () => {
@@ -40,15 +40,12 @@ describe("SaleorLogo", () => {
     });
 
     // Act
-    render(<SaleorLogo />);
+    render(<ExlynaturalLogo />);
 
     // Assert
     const img = screen.getByRole("img");
 
-    expect(img).toHaveAttribute(
-      "src",
-      expect.stringContaining("sidebar-deafult-logo-darkMode.png"),
-    );
+    expect(img).toHaveAttribute("src", expect.stringContaining("exlynatural-logo-dark.svg"));
   });
 
   it("should throw error when theme is invalid", () => {
@@ -61,7 +58,7 @@ describe("SaleorLogo", () => {
 
     // Act & Assert
     expect(() => {
-      render(<SaleorLogo />);
+      render(<ExlynaturalLogo />);
     }).toThrow("Invalid theme mode, should not happen.");
   });
 });

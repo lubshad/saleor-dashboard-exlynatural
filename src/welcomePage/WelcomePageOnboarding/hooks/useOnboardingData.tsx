@@ -125,8 +125,8 @@ const getStepsData = ({
       }),
       description: intl.formatMessage({
         defaultMessage:
-          "Saleor includes a GraphQL Playground, an interactive GraphQL editor, allowing access to your Saleor instance's API through the web browser. The Playground lets you quickly familiarize yourself with the API, perform example operations, and send your first queries and mutations.",
-        id: "Nyxzpe",
+          "Exlynatural includes a GraphQL Playground, an interactive GraphQL editor, allowing access to your Exlynatural instance's API through the web browser. The Playground lets you quickly familiarize yourself with the API, perform example operations, and send your first queries and mutations.",
+        id: "IspDws",
         description: "onboarding step description",
       }),
       isCompleted: isStepCompleted("graphql-playground"),
@@ -156,8 +156,8 @@ const getStepsData = ({
       }),
       description: intl.formatMessage({
         defaultMessage:
-          "Review the central hub for managing all available extensions. Here, you can easily oversee your extensions and enhance Saleor with custom solutions using webhooks and APIs.",
-        id: "zsz6LN",
+          "Review the central hub for managing all available extensions. Here, you can easily oversee your extensions and enhance Exlynatural with custom solutions using webhooks and APIs.",
+        id: "Ecf/IO",
         description: "onboarding step description",
       }),
       isCompleted: isStepCompleted("view-extensions"),

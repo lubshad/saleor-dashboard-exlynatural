@@ -122,8 +122,8 @@ export const getExternalAuthenticationMethodName = ({
   switch (pluginId) {
     case CLOUD_PLUGIN_ID:
       return intl.formatMessage({
-        defaultMessage: "Continue with Saleor Cloud",
-        id: "qf8OtW",
+        defaultMessage: "Continue with Exlynatural Cloud",
+        id: "c2QS7d",
       });
     case SSO_PLUGIN_ID:
       return intl.formatMessage({
