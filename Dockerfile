@@ -26,6 +26,7 @@ ARG EXTENSIONS_API_URL
 ARG STATIC_URL
 ARG SKIP_SOURCEMAPS
 ARG LOCALE_CODE
+ARG BUILD_NODE_OPTIONS
 
 ENV API_URL="${API_URL:-http://localhost:8000/graphql/}"
 ENV APP_MOUNT_URI="${APP_MOUNT_URI:-/dashboard/}"
@@ -33,8 +34,9 @@ ENV EXTENSIONS_API_URL="${EXTENSIONS_API_URL}"
 ENV STATIC_URL="${STATIC_URL:-/dashboard/}"
 ENV SKIP_SOURCEMAPS="${SKIP_SOURCEMAPS:-true}"
 ENV LOCALE_CODE="${LOCALE_CODE:-EN}"
+ENV BUILD_NODE_OPTIONS="${BUILD_NODE_OPTIONS:---max-old-space-size=4096}"
 RUN pnpm run generate:main
-RUN pnpm exec cross-env NODE_OPTIONS=--max-old-space-size=8192 vite build
+RUN pnpm exec cross-env NODE_OPTIONS="${BUILD_NODE_OPTIONS}" vite build
 
 FROM nginx:stable-alpine AS runner
 WORKDIR /app

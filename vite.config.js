@@ -101,12 +101,15 @@ export default defineConfig(({ command, mode }) => {
 
   if (!isDev) {
     console.log("Enabling service worker...");
+  }
 
+  if (!isDev && SENTRY_AUTH_TOKEN && SENTRY_ORG && SENTRY_PROJECT) {
     plugins.push(
       sentryVitePlugin({
         authToken: SENTRY_AUTH_TOKEN,
         org: SENTRY_ORG,
         project: SENTRY_PROJECT,
+        telemetry: false,
       }),
     );
   }

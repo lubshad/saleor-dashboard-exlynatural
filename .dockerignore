@@ -1,3 +1,14 @@
 node_modules
 build
+coverage
+test-results
+playwright-report
+.pnpm-store
+.git
+.env
+.env.*
+!.env.template
+deploy.env
+.DS_Store
 *.stories.tsx
+*.tsbuildinfo
