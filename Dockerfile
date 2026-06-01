@@ -36,7 +36,7 @@ ENV SKIP_SOURCEMAPS="${SKIP_SOURCEMAPS:-true}"
 ENV LOCALE_CODE="${LOCALE_CODE:-EN}"
 ENV BUILD_NODE_OPTIONS="${BUILD_NODE_OPTIONS:---max-old-space-size=4096}"
 RUN pnpm run generate:main
-RUN pnpm exec cross-env NODE_OPTIONS="${BUILD_NODE_OPTIONS}" vite build
+RUN pnpm exec cross-env NODE_OPTIONS=--max-old-space-size=4096 vite build
 
 FROM nginx:stable-alpine AS runner
 WORKDIR /app
